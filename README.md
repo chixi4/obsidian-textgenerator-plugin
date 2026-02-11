@@ -11,6 +11,34 @@
   <br />
 </div>
 
+## Fork Branch Changes vs Upstream
+
+This repository has a fork branch named `fix-ai-callout-margin`.
+
+### What changed in this fork branch
+
+Compared with upstream before merge, this branch contains one functional UI fix:
+
+- Commit: `251b05e1ccf2d56165b13d57c99329a900a1f9a0`
+- Date: 2026-01-08
+- Author: chixi4
+- File: `src/css/global.css`
+- Change:
+  - `.callout[data-callout="ai"] > .callout-title` `margin-left` changed from `-1rem` to `0`
+  - `.callout[data-callout="ai"] > .callout-content` `margin-left` changed from `2rem` to `0`
+
+### Why this change was made
+
+The previous margin settings caused abnormal indentation in AI callout blocks.  
+This fix removes the offset so callout title and content align correctly in Obsidian.
+
+### Current upstream status
+
+- This branch change is already merged upstream:
+  - Upstream merge commit: `2e5e7d07e30663efdd787e19fe864ae0a7ff8a96`
+  - PR: `#375`
+- As of 2026-02-11, the branch itself has no extra patch beyond upstream merge content.
+
 ## What is Text Generator?
 
 **Text Generator** is an open-source AI Assistant Tool that brings the power of Generative Artificial Intelligence to the power of knowledge creation and organization in Obsidian.
